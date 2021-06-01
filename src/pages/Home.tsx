@@ -1,5 +1,6 @@
 import Guidlines from '../components/Guildines';
 import Heading from '../components/Heading';
+import Accordion from '../components/Accordion';
 
 const Home = () => {
   return (
@@ -10,6 +11,7 @@ const Home = () => {
         <small className='subtitle'>
           FRONTEND DEVELOPER | VISUAL DESIGNER | ARTIST | MUSICIAN
         </small>
+        <Accordion />
       </div>
     </>
   );

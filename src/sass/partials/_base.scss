@@ -7,16 +7,6 @@ body {
 
 .App {
   color: white;
-  min-height: 100vh;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-clip: border-box;
-  background-attachment: fixed;
-  height: 100%;
-  overflow: hidden;
 }
 
 *,
@@ -28,20 +18,23 @@ body {
 }
 
 body {
-  line-height: 1;
+  line-height: 1.15;
   font-family: 'Raleway', sans-serif;
 }
 
 h1,
 h2 {
-  font-weight: bold;
+  font-family: 'Amiri', serif;
+
+  font-weight: normal;
   text-transform: uppercase;
+
   padding: 0;
   margin: 0;
 }
 
 h2 {
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 h3 {
