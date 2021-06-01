@@ -7,11 +7,13 @@ const Home = () => {
     <>
       <div className='wrapper'>
         <Guidlines></Guidlines>
-        <Heading title='Amaryllis'></Heading>
-        <small className='subtitle'>
-          FRONTEND DEVELOPER | VISUAL DESIGNER | ARTIST | MUSICIAN
-        </small>
-        <Accordion />
+        <div className='wrapper--inner'>
+          <Heading title='Amaryllis'></Heading>
+          <small className='subtitle'>
+            FRONTEND DEVELOPER | VISUAL DESIGNER | ARTIST | MUSICIAN
+          </small>
+          <Accordion />
+        </div>
       </div>
     </>
   );

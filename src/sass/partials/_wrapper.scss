@@ -1,8 +1,12 @@
 .wrapper {
   margin: 2rem;
-
   min-height: 90vh;
   position: relative;
+
+  &--inner {
+    position: relative;
+    z-index: 10;
+  }
 
   &__top {
     display: flex;
@@ -21,7 +25,7 @@
   &__guidline {
     min-height: 1.5rem;
     width: 3px;
-    background-color: rgb(182, 192, 197);
+    background-color: rgb(255, 255, 255);
     display: flex;
 
     &--br {

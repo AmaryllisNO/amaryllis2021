@@ -3,7 +3,36 @@
   background-color: #0f1116;
 
   &__segment {
-    border-left: white 3px solid;
+    transition: 0.3s;
+
+    &::before {
+      transition: 0.3s;
+      content: '';
+      position: absolute;
+      display: inline-block;
+      height: 1.5rem;
+      width: 3px;
+      background-color: white;
+    }
+  }
+
+  &__content {
+    transition: 0.3s;
+    display: block;
+    opacity: 0;
+    height: 0px;
+    overflow: hidden;
+
+    &--selected {
+      transition: 0.3s;
+      opacity: 1;
+      height: 70vh;
+    }
+  }
+
+  &__heading {
+    font-size: 1.8em;
+    cursor: pointer;
   }
 
   &__heading,
@@ -48,6 +77,18 @@
       border: 2px solid rgba(255, 255, 255, 0);
       transition: 0.3s;
     }
+  }
+}
+
+.accordion__segment--selected {
+  &::before {
+    transition: 0.3s;
+    content: '';
+    position: absolute;
+    display: inline-block;
+    height: 70vh;
+    width: 3px;
+    background-color: white;
   }
 }
 
