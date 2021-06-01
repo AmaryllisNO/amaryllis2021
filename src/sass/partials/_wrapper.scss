@@ -1,0 +1,35 @@
+.wrapper {
+  margin: 2rem;
+
+  min-height: 90vh;
+  position: relative;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    max-height: 1.5rem;
+  }
+
+  &__bottom {
+    width: 100%;
+    display: inline-block;
+    justify-content: space-between;
+    position: absolute;
+    bottom: 0;
+  }
+
+  &__guidline {
+    min-height: 1.5rem;
+    width: 3px;
+    background-color: white;
+    display: flex;
+
+    &--br {
+      float: right;
+    }
+
+    &--bl {
+      float: left;
+    }
+  }
+}
