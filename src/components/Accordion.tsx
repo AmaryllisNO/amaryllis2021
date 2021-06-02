@@ -19,7 +19,7 @@ const Accordion: FC<Props> = (props) => {
   };
 
   return (
-    <div className='accordion'>
+    <div className={selected !== null ? 'accordion--selected' : 'accordion'}>
       {data.map((item, i) => (
         <div
           key={item.id}

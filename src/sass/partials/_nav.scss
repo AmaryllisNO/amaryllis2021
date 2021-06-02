@@ -1,0 +1,15 @@
+.nav {
+  position: fixed;
+  bottom: 0;
+  z-index: 999;
+  width: 100%;
+  max-height: 3rem;
+  background-color: $background-colour;
+  display: flex;
+  justify-content: center;
+
+  &__logo img {
+    max-height: 3rem;
+    padding: 0.5rem 0 0.5rem 0;
+  }
+}

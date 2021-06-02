@@ -30,16 +30,17 @@ export const data = [
   {
     id: 1,
     title: 'Graphics',
-    description: 'A collection of websites I’ve built as a frontend developer.',
+    description:
+      'A collection of graphic designs I’ve made for myself and others.',
   },
   {
     id: 2,
     title: 'Art',
-    description: 'A collection of websites I’ve built as a frontend developer.',
+    description: 'A collection of artworks I have made over the years.',
   },
   {
     id: 3,
     title: 'Music',
-    description: 'A collection of websites I’ve built as a frontend developer.',
+    description: 'A collection of music I have produced.',
   },
 ];

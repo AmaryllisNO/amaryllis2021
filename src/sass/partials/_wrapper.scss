@@ -1,5 +1,5 @@
 .wrapper {
-  margin: 2rem;
+  margin: $page-spacing;
   min-height: 90vh;
   position: relative;
 
@@ -30,10 +30,12 @@
 
     &--br {
       float: right;
+      margin-bottom: 1rem;
     }
 
     &--bl {
       float: left;
+      margin-bottom: 1rem;
     }
   }
 }

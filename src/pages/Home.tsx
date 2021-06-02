@@ -1,6 +1,7 @@
 import Guidlines from '../components/Guildines';
 import Heading from '../components/Heading';
 import Accordion from '../components/Accordion';
+import Nav from '../components/Nav';
 
 const Home = () => {
   return (
@@ -14,7 +15,8 @@ const Home = () => {
           </small>
           <Accordion />
         </div>
-      </div>
+      </div>{' '}
+      <Nav />
     </>
   );
 };
