@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import { data } from '../constants/data';
 
 interface Props {
   title?: string;
@@ -9,54 +10,10 @@ interface Props {
 const Accordion: FC<Props> = (props) => {
   const [selected, setSelected] = useState(null);
 
-  const data = [
-    {
-      id: 0,
-      title: 'Websites',
-      description:
-        'A collection of websites I’ve built as a frontend developer.',
-      works: [
-        {
-          id: 0.0,
-          title: 'Art Commissions | 2021',
-          image:
-            'https://cdn.discordapp.com/attachments/798636076662390805/849380626485870612/unknown.png',
-          link: 'https://commissions.amaryllis.cc',
-        },
-        {
-          id: 0.1,
-          title: 'Grafix | 2021',
-          image:
-            'https://cdn.discordapp.com/attachments/798636076662390805/849381320466759690/unknown.png',
-          link: 'https://grafix-website.vercel.app/',
-        },
-      ],
-    },
-    {
-      id: 1,
-      title: 'Graphics',
-      description:
-        'A collection of websites I’ve built as a frontend developer.',
-    },
-    {
-      id: 2,
-      title: 'Art',
-      description:
-        'A collection of websites I’ve built as a frontend developer.',
-    },
-    {
-      id: 3,
-      title: 'Music',
-      description:
-        'A collection of websites I’ve built as a frontend developer.',
-    },
-  ];
-
   const toggle = (i: any) => {
     if (selected === i) {
       return setSelected(null);
     }
-    console.log(selected);
 
     setSelected(i);
   };

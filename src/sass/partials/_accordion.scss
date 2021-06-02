@@ -1,12 +1,16 @@
 .accordion {
   margin-top: 2rem;
   background-color: #0f1116;
+  position: relative;
 
   &__segment {
     transition: 0.3s;
+    position: relative;
+    // border-left: 3px solid white;
+    transition: all 0.3s;
 
     &::before {
-      transition: 0.3s;
+      transition: all 0.3s;
       content: '';
       position: absolute;
       display: inline-block;
@@ -17,16 +21,17 @@
   }
 
   &__content {
-    transition: 0.3s;
     display: block;
     opacity: 0;
-    height: 0px;
-    overflow: hidden;
+    max-height: 0;
+    overflow-y: hidden;
+    transition: all 0.3s ease;
 
     &--selected {
-      transition: 0.3s;
+      transition: all 0.3s;
       opacity: 1;
-      height: 70vh;
+      max-height: 500px;
+      overflow-y: scroll;
     }
   }
 
@@ -38,7 +43,11 @@
   &__heading,
   &__description {
     padding-left: 2rem;
+  }
+
+  &__description {
     margin-bottom: 1rem;
+    color: rgb(178, 183, 190);
   }
 
   &__work {
@@ -81,12 +90,17 @@
 }
 
 .accordion__segment--selected {
+  position: relative;
+  margin-bottom: 2rem;
+  transition: all 0.3s;
+  // border-left: 3px solid white;
   &::before {
-    transition: 0.3s;
+    transition: all 0.3s;
     content: '';
     position: absolute;
     display: inline-block;
-    height: 70vh;
+    height: 100%;
+
     width: 3px;
     background-color: white;
   }
