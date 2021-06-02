@@ -2,7 +2,7 @@
   margin: $page-spacing;
   min-height: 90vh;
   position: relative;
-
+  z-index: -1;
   &--inner {
     position: relative;
     z-index: 10;

@@ -2,7 +2,7 @@
   // border: 1px white solid;
   position: fixed;
   bottom: 0;
-  z-index: 999;
+  z-index: 3;
   width: 100%;
   min-height: $page-spacing * 1.5;
   background-color: $background-colour;
@@ -57,6 +57,8 @@
   &--open {
     min-height: 50%;
     transition: 0.3s;
+    padding-top: $page-spacing;
+    box-shadow: 0px -7px 65px -4px rgba(0, 0, 0, 1);
 
     &::before {
       @include guidline;
@@ -64,7 +66,7 @@
       opacity: 1;
       transition: 0.1s;
       margin-left: $page-spacing;
-      height: 80%;
+      height: 70%;
     }
     &::after {
       @include guidline;
@@ -72,7 +74,7 @@
       transition: 0.1s;
       right: 0;
       margin-right: $page-spacing;
-      height: 80%;
+      height: 70%;
     }
   }
 }

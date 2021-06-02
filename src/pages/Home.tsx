@@ -6,17 +6,19 @@ import Nav from '../components/Nav';
 const Home = () => {
   return (
     <>
-      <div className='wrapper'>
-        <Guidlines></Guidlines>
-        <div className='wrapper--inner'>
-          <Heading title='Amaryllis'></Heading>
-          <small className='subtitle'>
-            FRONTEND DEVELOPER | VISUAL DESIGNER | ARTIST | MUSICIAN
-          </small>
-          <Accordion />
+      <div className='intro'>
+        <div className='wrapper'>
+          <Guidlines></Guidlines>
+          <div className='wrapper--inner'>
+            <Heading title='Amaryllis'></Heading>
+            <small className='subtitle'>
+              FRONTEND DEVELOPER | VISUAL DESIGNER | ARTIST | MUSICIAN
+            </small>
+            <Accordion />
+          </div>
         </div>
-      </div>{' '}
-      <Nav />
+        <Nav />
+      </div>
     </>
   );
 };

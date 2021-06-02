@@ -1,0 +1,32 @@
+@keyframes intro {
+  0% {
+    position: absolute;
+    min-height: 1;
+    max-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #88668f;
+  }
+  50% {
+    max-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+
+    background-color: #3a4664;
+  }
+  100% {
+    max-height: 1px;
+    max-height: 1vh;
+  }
+}
+
+.intro {
+  left: 0px;
+  top: 0px;
+  background-color: #3a466400;
+  z-index: 999;
+  position: absolute;
+  width: 100vw;
+  //animation: intro 2s linear;
+}
