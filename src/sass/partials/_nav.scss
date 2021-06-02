@@ -1,15 +1,78 @@
 .nav {
+  // border: 1px white solid;
   position: fixed;
   bottom: 0;
   z-index: 999;
   width: 100%;
-  max-height: 3rem;
+  min-height: $page-spacing * 1.5;
   background-color: $background-colour;
   display: flex;
+  vertical-align: middle;
   justify-content: center;
+  transition: 0.3s;
 
   &__logo img {
     max-height: 3rem;
     padding: 0.5rem 0 0.5rem 0;
+  }
+
+  &__hamburger {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    vertical-align: middle;
+    margin-bottom: $page-spacing/1.8;
+    margin-right: $page-spacing;
+
+    &button {
+      background: none;
+      outline: 0;
+      border: none;
+    }
+
+    &image {
+      animation: fade-in-slower 0.3s linear;
+      &--fade {
+        animation: fade-in 0.3s linear;
+      }
+
+      /* transform: scale(1.5);
+      transform-origin: top right; */
+    }
+  }
+
+  &::before {
+    @include guidline;
+    left: 0;
+    opacity: 0;
+    margin-left: $page-spacing;
+  }
+  &::after {
+    @include guidline;
+    right: 0;
+    opacity: 0;
+    margin-right: $page-spacing;
+  }
+
+  &--open {
+    min-height: 50%;
+    transition: 0.3s;
+
+    &::before {
+      @include guidline;
+      left: 0;
+      opacity: 1;
+      transition: 0.1s;
+      margin-left: $page-spacing;
+      height: 80%;
+    }
+    &::after {
+      @include guidline;
+      opacity: 1;
+      transition: 0.1s;
+      right: 0;
+      margin-right: $page-spacing;
+      height: 80%;
+    }
   }
 }
