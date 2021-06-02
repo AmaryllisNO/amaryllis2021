@@ -1,7 +1,9 @@
 import Guidlines from '../components/Guildines';
 import Heading from '../components/Heading';
-import Accordion from '../components/Accordion';
+import SmallerAccordion from '../components/SmallerAccordion';
 import Nav from '../components/Nav';
+
+import CVData from '../constants/cvdata';
 
 const About = () => {
   return (
@@ -13,7 +15,7 @@ const About = () => {
           <small className='subtitle'>
             FRONTEND DEVELOPER | VISUAL DESIGNER | ARTIST | MUSICIAN
           </small>
-          <Accordion />
+          <SmallerAccordion data={CVData} />
         </div>
       </div>
       <Nav />
