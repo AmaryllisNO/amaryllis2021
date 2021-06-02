@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import { data } from '../constants/data';
 
 import Guidlines from '../components/Guildines';
 import Heading from '../components/Heading';
@@ -25,7 +26,7 @@ const Home = () => {
           <small className='subtitle'>
             FRONTEND DEVELOPER | VISUAL DESIGNER | ARTIST | MUSICIAN
           </small>
-          <Accordion />
+          <Accordion data={data} />
         </div>
       </div>
       <Nav />
