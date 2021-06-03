@@ -3,12 +3,14 @@
   background-color: #0f1116;
   position: relative;
   transition: 0.5s;
+  width: 100%;
 
   &--selected {
     position: absolute;
     top: 0;
     background-color: #0f1116;
     transition: 0.5s;
+    width: 100%;
   }
 
   &__segment {
@@ -69,6 +71,10 @@
   &__heading {
     font-size: 1.8em;
     cursor: pointer;
+
+    &--alt {
+      font-size: 1.2em;
+    }
   }
 
   &__heading,
@@ -116,6 +122,22 @@
       min-height: 100%;
       border: 2px solid rgba(255, 255, 255, 0);
       transition: 0.3s;
+    }
+  }
+
+  // alt accordion
+
+  &__experiencelist {
+    // margin-top: $page-spacing/2;
+    margin-left: $page-spacing * 2;
+    margin-bottom: $page-spacing/2;
+    padding-top: $page-spacing/4;
+    list-style: square;
+
+    &item {
+      font-size: 0.9em;
+      font-style: italic;
+      //font-weight: bold;
     }
   }
 }

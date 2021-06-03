@@ -1,5 +1,5 @@
 import { FC, useState } from 'react';
-import { Link, useLocation, useHistory } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import AmaryllisTextLogo from '../assets/icons/amaryllis-text-logo-2021.svg';
 
 import Hamburger from '../assets/icons/menu.svg';
@@ -7,6 +7,10 @@ import Cross from '../assets/icons/cross.svg';
 
 const Nav: FC = () => {
   const [open, setOpen] = useState(false);
+
+  const location = useLocation();
+  const pathname = location.pathname;
+
   return (
     <nav className={open ? 'nav nav--open' : 'nav'}>
       <div className='nav__logo'>
@@ -32,6 +36,26 @@ const Nav: FC = () => {
           />
         </button>
       </div>
+      <ul className={open ? 'nav__list--open' : 'nav__list'}>
+        <li className='nav__listitem'>
+          <Link to='/'>
+            {pathname === '/' ? (
+              <span className='nav__link nav__link--active'>Portfolio</span>
+            ) : (
+              <span className='nav__link'>Portfolio</span>
+            )}
+          </Link>
+        </li>
+        <li className='nav__listitem'>
+          <Link to='/about'>
+            {pathname === '/about' ? (
+              <span className='nav__link nav__link--active'>About</span>
+            ) : (
+              <span className='nav__link'>About</span>
+            )}
+          </Link>
+        </li>
+      </ul>
     </nav>
   );
 };

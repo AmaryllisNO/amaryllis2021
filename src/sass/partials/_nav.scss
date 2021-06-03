@@ -6,12 +6,52 @@
   width: 100%;
   min-height: $page-spacing * 1.5;
   background-color: $background-colour;
-  display: flex;
-  vertical-align: middle;
+  display: block;
+  padding-left: $page-spacing;
+  padding-right: $page-spacing;
   justify-content: center;
   transition: 0.3s;
 
+  &__list {
+    display: none;
+
+    &--open {
+      display: block;
+      margin-top: $page-spacing/2;
+      font-family: 'Amiri', serif;
+      text-transform: uppercase;
+      font-size: 1.4em;
+
+      animation: fade-in 0.3s ease;
+    }
+
+    &item {
+      margin-bottom: $page-spacing/4;
+      text-align: center;
+    }
+  }
+
+  &__link {
+    color: #9599a3;
+    transition: 0.2s;
+
+    &:hover {
+      color: white;
+    }
+    &--active {
+      color: white;
+    }
+  }
+
+  &__logo {
+    display: block;
+    max-width: 112px;
+    margin: 0 auto;
+  }
+
   &__logo img {
+    display: flex;
+    justify-self: center;
     max-height: 3rem;
     padding: 0.5rem 0 0.5rem 0;
   }
@@ -35,22 +75,23 @@
       &--fade {
         animation: fade-in 0.3s linear;
       }
-
-      /* transform: scale(1.5);
-      transform-origin: top right; */
     }
   }
 
   &::before {
     @include guidline;
+    top: 0;
     left: 0;
     opacity: 0;
+    margin-top: $page-spacing;
     margin-left: $page-spacing;
   }
   &::after {
     @include guidline;
+    top: 0;
     right: 0;
     opacity: 0;
+    margin-top: $page-spacing;
     margin-right: $page-spacing;
   }
 

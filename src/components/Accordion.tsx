@@ -6,8 +6,8 @@ interface Props {
 }
 
 const Accordion: FC<Props> = (props) => {
-  const workData = props.data;
-  console.log(workData);
+  const { data } = props;
+  const workData = data;
   const [selected, setSelected] = useState(null);
 
   const toggle = (i: any) => {
@@ -15,7 +15,7 @@ const Accordion: FC<Props> = (props) => {
       return setSelected(null);
     }
 
-    setSelected(i);
+    return setSelected(i);
   };
 
   return (
@@ -28,9 +28,10 @@ const Accordion: FC<Props> = (props) => {
               ? 'accordion__segment--selected'
               : 'accordion__segment'
           }
-          onClick={() => toggle(i)}
         >
-          <h2 className='accordion__heading'>{item.title}</h2>
+          <h2 className='accordion__heading' onClick={() => toggle(i)}>
+            {item.title}
+          </h2>
           <div
             className={
               selected === i
