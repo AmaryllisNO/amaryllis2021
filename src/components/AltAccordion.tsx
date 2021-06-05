@@ -14,11 +14,8 @@ interface Props {
 }
 
 const AltAccordion: React.FunctionComponent<Props> = (props: Props) => {
-  console.log(props);
   const cvData = props.data;
   const [selected, setSelected] = useState(null);
-
-  console.log(cvData[0]);
 
   const toggle = (i: any) => {
     if (selected === i) {
@@ -63,11 +60,27 @@ const AltAccordion: React.FunctionComponent<Props> = (props: Props) => {
               </li>
             </ul>
             <p className='accordion__description'>{item.description}</p>
-            <ul>
-              <li>
-                {item.skill_name}
-                {item.skills.map((skill: string) => skill)}
-              </li>
+            <ul className='accordion__skilllist'>
+              <div className='accordion__skillcontainer'>
+                <span className='accordion__skillname'>{item.skill_name}</span>
+                <li className='accordion__skilllistitem'>
+                  {item.skills.map((skill: string) => (
+                    <span key={skill} className='accordion__skill'>
+                      {skill}
+                    </span>
+                  ))}
+                </li>
+              </div>
+              <div className='accordion__skillcontainer'>
+                <div className='accordion__skillname'>Tools:</div>
+                <li className='accordion__skilllistitem'>
+                  {item.tools.map((tool: string) => (
+                    <span key={tool} className='accordion__skill'>
+                      {tool}
+                    </span>
+                  ))}
+                </li>
+              </div>
             </ul>
           </div>
         </div>

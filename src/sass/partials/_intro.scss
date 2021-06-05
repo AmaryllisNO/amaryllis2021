@@ -18,8 +18,8 @@
   top: 0px;
   min-width: 100vw;
   // border: white solid 2px;
-  top: 12vh;
-  min-height: 70vh;
+  top: $page-spacing * 2;
+  min-height: 75%;
   background-color: $background-colour;
   z-index: 100;
   display: block;

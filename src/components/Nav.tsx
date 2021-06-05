@@ -55,6 +55,15 @@ const Nav: FC = () => {
             )}
           </Link>
         </li>
+        <li className='nav__listitem'>
+          <Link to='/contact'>
+            {pathname === '/contact' ? (
+              <span className='nav__link nav__link--active'>Contact</span>
+            ) : (
+              <span className='nav__link'>Contact</span>
+            )}
+          </Link>
+        </li>
       </ul>
     </nav>
   );

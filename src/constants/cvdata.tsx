@@ -18,9 +18,9 @@ const CVData = [
       'HTML',
       'CSS/SASS',
       'JavaScript',
+      'Typescript',
       'React',
       'Next.js',
-      'Typescript',
     ],
     tools: [
       'Atom',
@@ -64,11 +64,13 @@ const CVData = [
         school: 'Cinematic Design - Evenant Course',
         years: [2018],
       },
-      '3 years of graphic design and freelance experience ',
+      '6 years of freelance experience ',
     ],
-    description: `Before studying frontend development, I've had a bit of experience in terms of design, where I have worked freelance by designing logos for other artists and music producers. `,
+    description: ` As far as I can remember, I've always been interested in fantasy fiction. Whether it was a book, a movie, a game or a TV show, the attraction I felt towards fantastical worlds outside our own was present in all of them. From this I've been drawing and recreating scenarios like them. Which has led me into the world of concept art and design.
+
+    Nowadays I draw freelance, making album covers for artists and other brand material, or helping someone get their ideas onto a canvas. It is a field that is very fulfilling and also very fun.  `,
     skill_name: 'I draw:',
-    skills: ['Environnemnts', 'Characters', 'Album Covers', 'Brand Material'],
+    skills: ['Environments', 'Characters', 'Album Covers', 'Brand Material'],
     tools: [
       'Adobe Photoshop',
       'Adobe Illustrator',
@@ -83,7 +85,7 @@ const CVData = [
     title: 'Sound & Music Production',
     experience: [
       {
-        degree: 'Higher Professional Degree in Frontend Development',
+        degree: 'Higher Professional Degree in sound & Music Production',
         school: 'Noroff - School of Technology and Digital Media',
         years: [2017, 2019],
       },
@@ -92,7 +94,14 @@ const CVData = [
     description: ` "Amaryllis has been producing drum & bass since 2012, with her first EP, ‘Never Again’, released on Surreal Recordings; now, her latest EP ‘Light Pillars’ marks her Subsphere Records debut. Drawing influence from Netsky, Fred V & Grafix, Camo & Krooked, Culture Shock, Logistics, and more, Amaryllis’ bright and energetic sound is a welcome addition to the Subsphere family.
 
     Creating everything from dubstep to orchestral music, her vast array of influence and talent is made evident in her four track EP, delivering the producers intended escapism through an incredibly immersive, bright atmosphere." - jungledrumandbass.co.uk `,
-    skills: ['Sound Design', 'Electronic Music'],
+    skill_name: 'I make:',
+    skills: [
+      'Sound Design',
+      'Electronic Music',
+      'Drum & Bass',
+      'Dubstep',
+      'Ambient',
+    ],
     tools: [
       'Ableton Live 10 Suite',
       'NI Kontakt',

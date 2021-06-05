@@ -32,6 +32,28 @@ export const data = [
     title: 'Graphics',
     description:
       'A collection of graphic designs I’ve made for myself and others.',
+    works: [
+      {
+        id: 0.0,
+        title: 'Character Logo',
+        image: 'https://amaryllis.cc/assets/svg/work/amary-logo-black2.svg',
+      },
+      {
+        id: 0.1,
+        title: 'Amaryllis Logo',
+        image: 'https://amaryllis.cc/assets/svg/work/amaryllis-text-logo.svg',
+      },
+      {
+        id: 0.2,
+        title: 'Amaryllis Icon',
+        image: 'http://amaryllis.cc/assets/svg/work/amathirdgen.svg',
+      },
+      {
+        id: 0.3,
+        title: 'Techy Abstract',
+        image: 'http://amaryllis.cc/assets/svg/work/techy.svg',
+      },
+    ],
   },
   {
     id: 2,

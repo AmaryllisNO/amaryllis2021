@@ -29,7 +29,16 @@ const Accordion: FC<Props> = (props) => {
               : 'accordion__segment'
           }
         >
-          <h2 className='accordion__heading' onClick={() => toggle(i)}>
+          <h2
+            tabIndex='1'
+            className='accordion__heading'
+            onClick={() => toggle(i)}
+            onKeyDown={(e) => {
+              if (e.key === 'Enter') {
+                toggle(i);
+              }
+            }}
+          >
             {item.title}
           </h2>
           <div
@@ -40,28 +49,36 @@ const Accordion: FC<Props> = (props) => {
             }
           >
             <p className='accordion__description'>{item.description}</p>
-            {item.works?.map(
-              (work: {
-                id: number;
-                image: string;
-                link: string;
-                title: string;
-              }) => (
-                <a key={work.id} href={work.link} className='accordion__work'>
-                  <div className='accordion__worklabel'>
-                    <h4 className='accordion__worktitle'>{work.title}</h4>
-                  </div>
+            <div className='accordion__works'>
+              {item.works?.map(
+                (work: {
+                  id: number;
+                  image: string;
+                  link: string;
+                  title: string;
+                }) => (
+                  <>
+                    <a
+                      key={work.id}
+                      href={work.link}
+                      className='accordion__work'
+                    >
+                      <div className='accordion__worklabel'>
+                        <h4 className='accordion__worktitle'>{work.title}</h4>
+                      </div>
 
-                  <div className='accordion__link'>
-                    <img
-                      className='accordion__workimage'
-                      src={work.image}
-                      alt={work.title}
-                    />
-                  </div>
-                </a>
-              )
-            )}
+                      <div className='accordion__link'>
+                        <img
+                          className='accordion__workimage'
+                          src={work.image}
+                          alt={work.title}
+                        />
+                      </div>
+                    </a>
+                  </>
+                )
+              )}
+            </div>
           </div>
         </div>
       ))}

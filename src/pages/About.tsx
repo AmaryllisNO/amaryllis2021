@@ -5,8 +5,6 @@ import Nav from '../components/Nav';
 
 import CVData from '../constants/cvdata';
 
-console.log(CVData[0].id);
-
 const About = () => {
   return (
     <>

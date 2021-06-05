@@ -83,8 +83,10 @@
   }
 
   &__description {
-    margin-bottom: 1rem;
+    margin-top: $page-spacing;
+    margin-bottom: $page-spacing;
     color: rgb(178, 183, 190);
+    font-size: 0.9em;
   }
 
   &__work {
@@ -131,20 +133,69 @@
     // margin-top: $page-spacing/2;
     margin-left: $page-spacing * 2;
     margin-bottom: $page-spacing/2;
-    padding-top: $page-spacing/4;
+    padding-top: $page-spacing/1.5;
     list-style: square;
 
     &item {
       font-size: 0.9em;
-      font-style: italic;
+      //font-style: italic;
+      margin-bottom: $page-spacing/4;
       //font-weight: bold;
     }
+  }
+
+  &__skilllist {
+    margin-left: $page-spacing * 0.75;
+    display: flex;
+
+    // margin-bottom: $page-spacing/2;
+    //padding-top: $page-spacing/4;
+    font-style: italic;
+
+    &item {
+      display: flex;
+      flex-wrap: wrap;
+      //margin-bottom: $page-spacing/2;
+      margin-top: $page-spacing/4;
+      transition: 0.2s;
+    }
+  }
+
+  &__skillcontainer {
+    display: inline;
+    margin-right: $page-spacing/5;
+    max-width: 300px;
+  }
+
+  &__skillname {
+    color: rgb(164, 168, 173);
+    text-transform: uppercase;
+    // padding-top: $page-spacing/4;
+    transition: 0.2s;
+    margin-left: $page-spacing/4;
+    // padding-bottom: $page-spacing/4;
+  }
+
+  &__skill {
+    display: block;
+    font-style: normal;
+
+    padding: $page-spacing/4;
+    //padding-left: $page-spacing/3;
+    //padding-right: 0;
+    margin-left: $page-spacing/4;
+    margin-bottom: $page-spacing/4;
+    // background-color: white;
+    // color: black;
+    border: 1px solid white;
+    transition: 0.2s;
+    // transform: skew(-10deg);
   }
 }
 
 .accordion__segment--selected {
   position: relative;
-  margin-bottom: $page-spacing;
+  margin-bottom: $page-spacing/2;
   transition: all 0.3s;
   // border-left: 3px solid white;
   &::before {
@@ -183,5 +234,32 @@
     background-color: white;
     color: black;
     transition: 0.3s;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .accordion {
+    &__skill {
+      //min-width: 100px;
+      text-align: center;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .accordion {
+    &__works {
+      display: inline-flex;
+    }
+
+    &__work {
+      max-width: 400px;
+    }
+
+    &__content {
+      &--selected {
+        scrollbar-width: none; /* Firefox */
+      }
+    }
   }
 }
