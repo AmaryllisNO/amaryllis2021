@@ -1,5 +1,4 @@
 import { FC, useState } from 'react';
-// import { data } from '../constants/data';
 
 interface Props {
   data: object[];
@@ -50,33 +49,108 @@ const Accordion: FC<Props> = (props) => {
           >
             <p className='accordion__description'>{item.description}</p>
             <div className='accordion__works'>
-              {item.works?.map(
-                (work: {
-                  id: number;
-                  image: string;
-                  link: string;
-                  title: string;
-                }) => (
-                  <>
-                    <a
-                      key={work.id}
-                      href={work.link}
-                      className='accordion__work'
-                    >
-                      <div className='accordion__worklabel'>
-                        <h4 className='accordion__worktitle'>{work.title}</h4>
-                      </div>
+              {item.title === 'Websites' ? (
+                <>
+                  {item.works?.map(
+                    (work: {
+                      id: number;
+                      image: string;
+                      link: string;
+                      title: string;
+                    }) => (
+                      <>
+                        {' '}
+                        <a
+                          key={work.id}
+                          href={work.link}
+                          className='accordion__work'
+                          target='_blank'
+                          rel='noopener noreferrer'
+                        >
+                          <div className='accordion__worklabel'>
+                            <h4 className='accordion__worktitle'>
+                              {work.title}
+                            </h4>
+                          </div>
 
-                      <div className='accordion__link'>
-                        <img
-                          className='accordion__workimage'
-                          src={work.image}
-                          alt={work.title}
-                        />
-                      </div>
-                    </a>
-                  </>
-                )
+                          <div className='accordion__link'>
+                            <img
+                              className='accordion__workimage'
+                              src={work.image}
+                              alt={work.title}
+                            />
+                          </div>
+                        </a>
+                      </>
+                    )
+                  )}
+                </>
+              ) : (
+                ''
+              )}
+
+              {item.title === 'Graphics' ? (
+                <>
+                  {item.works?.map(
+                    (work: { id: number; image: string; title: string }) => (
+                      <>
+                        {' '}
+                        <div key={work.id} className='accordion__work'>
+                          <div className='accordion__worklabel'>
+                            <h4 className='accordion__worktitle'>
+                              {work.title}
+                            </h4>
+                          </div>
+
+                          <div className='accordion__link'>
+                            <img
+                              className='accordion__workimage accordion__workimage--uncrop'
+                              src={work.image}
+                              alt={work.title}
+                            />
+                          </div>
+                        </div>
+                      </>
+                    )
+                  )}
+                </>
+              ) : (
+                ''
+              )}
+
+              {item.title === 'Art' ? (
+                <>
+                  {item.works?.map(
+                    (work: {
+                      id: number;
+                      image: string;
+                      link: string;
+                      title: string;
+                      thumbnail: string;
+                    }) => (
+                      <>
+                        {' '}
+                        <div key={work.id} className='accordion__work'>
+                          <div className='accordion__worklabel'>
+                            <h4 className='accordion__worktitle'>
+                              {work.title}
+                            </h4>
+                          </div>
+
+                          <div className='accordion__link'>
+                            <img
+                              className='accordion__workimage accordion__workimage--center'
+                              src={work.thumbnail}
+                              alt={work.title}
+                            />
+                          </div>
+                        </div>
+                      </>
+                    )
+                  )}
+                </>
+              ) : (
+                ''
               )}
             </div>
           </div>
