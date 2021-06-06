@@ -29,7 +29,7 @@ const Accordion: FC<Props> = (props) => {
           }
         >
           <h2
-            tabIndex='1'
+            tabIndex={item.id}
             className='accordion__heading'
             onClick={() => toggle(i)}
             onKeyDown={(e) => {
