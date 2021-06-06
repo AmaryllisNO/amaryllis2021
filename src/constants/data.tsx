@@ -53,12 +53,52 @@ export const data = [
         title: 'Techy Abstract',
         image: 'http://amaryllis.cc/assets/svg/work/techy.svg',
       },
+      {
+        id: 0.4,
+        title: 'Cycling Company Logo',
+        image: 'http://amaryllis.cc/assets/svg/work/recyclelogo.svg',
+      },
     ],
   },
   {
     id: 2,
     title: 'Art',
     description: 'A collection of artworks I have made over the years.',
+    works: [
+      {
+        id: 0.0,
+        title: 'Full Render Commmission',
+        thumbnail:
+          'https://amaryllis.cc/assets/img/art/thumbnails/glasse-commission-thumbnail.jpg',
+        image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
+      },
+      {
+        id: 0.1,
+        title: 'Full Render Commmission',
+        thumbnail:
+          'http://amaryllis.cc/assets/img/art/thumbnails/djpoyoshi-commission.jpg',
+        image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
+      },
+      {
+        id: 0.2,
+        title: 'Vertical Cityscape',
+        thumbnail:
+          'http://amaryllis.cc/assets/img/art/thumbnails/landscape-sketch-91-rendered.jpg',
+        image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
+      },
+      {
+        id: 0.3,
+        title: 'Open Landscape',
+        thumbnail: 'http://amaryllis.cc/assets/img/art/thumbnails/art.jpg',
+        image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
+      },
+      {
+        id: 0.4,
+        title: 'Winter Motif',
+        thumbnail: 'http://amaryllis.cc/assets/img/art/thumbnails/december.jpg',
+        image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
+      },
+    ],
   },
   {
     id: 3,

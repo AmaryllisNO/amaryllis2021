@@ -121,9 +121,20 @@
       display: block;
       object-fit: cover;
       object-position: 20% 0;
-      min-height: 100%;
+      min-height: 80%;
       border: 2px solid rgba(255, 255, 255, 0);
       transition: 0.3s;
+      width: 100%;
+      max-height: 160px;
+
+      &--uncrop {
+        object-fit: fill;
+      }
+
+      &--center {
+        object-position: center;
+        min-width: 150px;
+      }
     }
   }
 
@@ -226,7 +237,11 @@
   .accordion__workimage {
     position: relative;
     border: 2px solid white;
-    transition: 0.3s;
+    // transition: 0.3s;
+  }
+
+  .accordion__workimage--uncrop {
+    border: 2px solid rgba(255, 255, 255, 0);
   }
 
   .accordion__worktitle {
@@ -250,6 +265,8 @@
   .accordion {
     &__works {
       display: inline-flex;
+      flex-wrap: wrap;
+      width: 100%;
     }
 
     &__work {
