@@ -34,27 +34,27 @@ export const data = [
       'A collection of graphic designs I’ve made for myself and others.',
     works: [
       {
-        id: 0.0,
+        id: 1.0,
         title: 'Character Logo',
         image: 'https://amaryllis.cc/assets/svg/work/amary-logo-black2.svg',
       },
       {
-        id: 0.1,
+        id: 1.1,
         title: 'Amaryllis Logo',
         image: 'https://amaryllis.cc/assets/svg/work/amaryllis-text-logo.svg',
       },
       {
-        id: 0.2,
+        id: 1.2,
         title: 'Amaryllis Icon',
         image: 'http://amaryllis.cc/assets/svg/work/amathirdgen.svg',
       },
       {
-        id: 0.3,
+        id: 1.3,
         title: 'Techy Abstract',
         image: 'http://amaryllis.cc/assets/svg/work/techy.svg',
       },
       {
-        id: 0.4,
+        id: 1.4,
         title: 'Cycling Company Logo',
         image: 'http://amaryllis.cc/assets/svg/work/recyclelogo.svg',
       },
@@ -66,34 +66,34 @@ export const data = [
     description: 'A collection of artworks I have made over the years.',
     works: [
       {
-        id: 0.0,
+        id: 2.0,
         title: 'Full Render Commmission',
         thumbnail:
           'https://amaryllis.cc/assets/img/art/thumbnails/glasse-commission-thumbnail.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
       {
-        id: 0.1,
+        id: 2.1,
         title: 'Full Render Commmission',
         thumbnail:
           'http://amaryllis.cc/assets/img/art/thumbnails/djpoyoshi-commission.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
       {
-        id: 0.2,
+        id: 2.2,
         title: 'Vertical Cityscape',
         thumbnail:
           'http://amaryllis.cc/assets/img/art/thumbnails/landscape-sketch-91-rendered.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
       {
-        id: 0.3,
+        id: 2.3,
         title: 'Open Landscape',
         thumbnail: 'http://amaryllis.cc/assets/img/art/thumbnails/art.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
       {
-        id: 0.4,
+        id: 2.4,
         title: 'Winter Motif',
         thumbnail: 'http://amaryllis.cc/assets/img/art/thumbnails/december.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',

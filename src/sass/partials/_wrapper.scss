@@ -26,7 +26,7 @@
 
   &__guidline {
     min-height: 1.5rem;
-    width: 3px;
+    width: 2px;
     background-color: rgb(255, 255, 255);
     display: flex;
 
@@ -39,5 +39,11 @@
       float: left;
       margin-bottom: 1rem;
     }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .wrapper {
+    margin-left: $page-spacing * 7;
   }
 }

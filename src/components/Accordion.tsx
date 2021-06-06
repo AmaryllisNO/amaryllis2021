@@ -58,30 +58,25 @@ const Accordion: FC<Props> = (props) => {
                       link: string;
                       title: string;
                     }) => (
-                      <>
-                        {' '}
-                        <a
-                          key={work.id}
-                          href={work.link}
-                          className='accordion__work'
-                          target='_blank'
-                          rel='noopener noreferrer'
-                        >
-                          <div className='accordion__worklabel'>
-                            <h4 className='accordion__worktitle'>
-                              {work.title}
-                            </h4>
-                          </div>
+                      <a
+                        key={work.id}
+                        href={work.link}
+                        className='accordion__work'
+                        target='_blank'
+                        rel='noopener noreferrer'
+                      >
+                        <div className='accordion__worklabel'>
+                          <h4 className='accordion__worktitle'>{work.title}</h4>
+                        </div>
 
-                          <div className='accordion__link'>
-                            <img
-                              className='accordion__workimage'
-                              src={work.image}
-                              alt={work.title}
-                            />
-                          </div>
-                        </a>
-                      </>
+                        <div className='accordion__link'>
+                          <img
+                            className='accordion__workimage'
+                            src={work.image}
+                            alt={work.title}
+                          />
+                        </div>
+                      </a>
                     )
                   )}
                 </>
@@ -93,24 +88,19 @@ const Accordion: FC<Props> = (props) => {
                 <>
                   {item.works?.map(
                     (work: { id: number; image: string; title: string }) => (
-                      <>
-                        {' '}
-                        <div key={work.id} className='accordion__work'>
-                          <div className='accordion__worklabel'>
-                            <h4 className='accordion__worktitle'>
-                              {work.title}
-                            </h4>
-                          </div>
-
-                          <div className='accordion__link'>
-                            <img
-                              className='accordion__workimage accordion__workimage--uncrop'
-                              src={work.image}
-                              alt={work.title}
-                            />
-                          </div>
+                      <div key={work.id} className='accordion__work'>
+                        <div className='accordion__worklabel'>
+                          <h4 className='accordion__worktitle'>{work.title}</h4>
                         </div>
-                      </>
+
+                        <div className='accordion__link'>
+                          <img
+                            className='accordion__workimage accordion__workimage--uncrop'
+                            src={work.image}
+                            alt={work.title}
+                          />
+                        </div>
+                      </div>
                     )
                   )}
                 </>
@@ -128,24 +118,19 @@ const Accordion: FC<Props> = (props) => {
                       title: string;
                       thumbnail: string;
                     }) => (
-                      <>
-                        {' '}
-                        <div key={work.id} className='accordion__work'>
-                          <div className='accordion__worklabel'>
-                            <h4 className='accordion__worktitle'>
-                              {work.title}
-                            </h4>
-                          </div>
-
-                          <div className='accordion__link'>
-                            <img
-                              className='accordion__workimage accordion__workimage--center'
-                              src={work.thumbnail}
-                              alt={work.title}
-                            />
-                          </div>
+                      <div key={work.id} className='accordion__work'>
+                        <div className='accordion__worklabel'>
+                          <h4 className='accordion__worktitle'>{work.title}</h4>
                         </div>
-                      </>
+
+                        <div className='accordion__link'>
+                          <img
+                            className='accordion__workimage accordion__workimage--center'
+                            src={work.thumbnail}
+                            alt={work.title}
+                          />
+                        </div>
+                      </div>
                     )
                   )}
                 </>
