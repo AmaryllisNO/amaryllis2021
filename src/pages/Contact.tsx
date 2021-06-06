@@ -61,7 +61,7 @@ const Contact = () => {
             <textarea
               name='message'
               placeholder='Your message...'
-              minLength='8'
+              minLength={8}
               required
               className='form__input'
               onChange={(e) => {
