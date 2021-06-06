@@ -4,6 +4,7 @@ import AmaryllisTextLogo from '../assets/icons/amaryllis-text-logo-2021.svg';
 
 import Hamburger from '../assets/icons/menu.svg';
 import Cross from '../assets/icons/cross.svg';
+import Socials from '../components/Socials';
 
 const Nav: FC = () => {
   const [open, setOpen] = useState(false);
@@ -65,6 +66,7 @@ const Nav: FC = () => {
           </Link>
         </li>
       </ul>
+      <Socials open={open} />
     </nav>
   );
 };

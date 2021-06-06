@@ -1,0 +1,50 @@
+.socials {
+  position: fixed;
+  bottom: $page-spacing/3;
+  display: flex;
+  justify-content: center;
+  display: none;
+
+  &__list {
+    &--open {
+      display: flex;
+    }
+    margin-left: $page-spacing/15;
+  }
+
+  &__listitem {
+    margin-right: 15px;
+  }
+
+  &__listitem a {
+    transition: 0.3s;
+    color: #c1c4ca;
+
+    &:hover {
+      transition: 0.3s;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (min-width: 900px) {
+  .socials {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $page-spacing * 1.2;
+
+    &__listitem {
+      margin-bottom: 15px;
+    }
+
+    &__listitem a {
+      transition: 0.3s;
+      color: #9599a3;
+
+      &:hover {
+        transition: 0.3s;
+        color: white;
+      }
+    }
+  }
+}
