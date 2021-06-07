@@ -51,20 +51,29 @@
         margin-left: -10px;
       }
     }
+    &:focus {
+      &::before {
+        transition: all 0.3s;
+        margin-left: -10px;
+        outline: 0;
+        -moz-outline: 0;
+      }
+    }
   }
 
   &__content {
-    display: block;
+    display: none;
     opacity: 0;
     max-height: 0;
     overflow-y: hidden;
     transition: all 0.3s;
 
     &--selected {
+      animation: content-fade-in 0.3s;
+
       top: 0;
-      transition: all 0.3s;
-      opacity: 1;
-      max-height: 500px;
+      display: block;
+
       overflow-y: scroll;
     }
   }
@@ -72,6 +81,7 @@
   &__heading {
     font-size: 1.8em;
     cursor: pointer;
+    max-width: 300px;
 
     &--alt {
       font-size: 1.2em;

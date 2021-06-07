@@ -22,22 +22,19 @@ const Accordion: FC<Props> = (props) => {
       {workData?.map((item: any, i: number) => (
         <div
           key={item.id}
+          tabIndex={item.id}
           className={
             selected === i
               ? 'accordion__segment--selected'
               : 'accordion__segment'
           }
+          onKeyDown={(e) => {
+            if (e.key === 'Enter') {
+              toggle(i);
+            }
+          }}
         >
-          <h2
-            tabIndex={item.id}
-            className='accordion__heading'
-            onClick={() => toggle(i)}
-            onKeyDown={(e) => {
-              if (e.key === 'Enter') {
-                toggle(i);
-              }
-            }}
-          >
+          <h2 className='accordion__heading' onClick={() => toggle(i)}>
             {item.title}
           </h2>
           <div

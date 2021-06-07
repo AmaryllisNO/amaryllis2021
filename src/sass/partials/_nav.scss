@@ -137,6 +137,14 @@
 
     &__listitem {
       text-align: left;
+
+      & a {
+        &:focus {
+          border-left: 2px white solid;
+          padding-left: 10px;
+          outline: 1px;
+        }
+      }
     }
 
     &__hamburger {
