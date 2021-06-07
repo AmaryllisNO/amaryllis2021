@@ -1,3 +1,5 @@
+@use "sass:math";
+
 body {
   background: #0f1116;
   color: white;
@@ -75,7 +77,7 @@ p {
   word-spacing: 0.5px;
   letter-spacing: 0.5px;
   font-size: 0.8em;
-  margin-top: $page-spacing/2;
+  margin-top: math.div($page-spacing, 2);
 }
 
 fieldset {

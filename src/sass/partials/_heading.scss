@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .heading {
   text-transform: uppercase;
   font-family: 'Amiri', serif;
@@ -13,6 +15,6 @@
 
   &--smaller {
     margin-top: $page-spacing;
-    margin-bottom: $page-spacing/3;
+    margin-bottom: math.div($page-spacing, 3);
   }
 }

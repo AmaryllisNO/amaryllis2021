@@ -1,6 +1,8 @@
+@use "sass:math";
+
 .socials {
   position: fixed;
-  bottom: $page-spacing/3;
+  bottom: math.div($page-spacing, 3);
   display: flex;
   justify-content: center;
   display: none;
@@ -9,7 +11,7 @@
     &--open {
       display: flex;
     }
-    margin-left: $page-spacing/15;
+    margin-left: math.div($page-spacing, 15);
   }
 
   &__listitem {

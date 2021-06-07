@@ -154,14 +154,14 @@
   &__experiencelist {
     // margin-top: $page-spacing/2;
     margin-left: $page-spacing * 2;
-    margin-bottom: $page-spacing/2;
-    padding-top: $page-spacing/1.5;
+    margin-bottom: math.div($page-spacing, 4);
+    padding-top: math.div($page-spacing, 1.5);
     list-style: square;
 
     &item {
       font-size: 0.9em;
       //font-style: italic;
-      margin-bottom: $page-spacing/4;
+      margin-bottom: math.div($page-spacing, 4);
       //font-weight: bold;
     }
   }
@@ -178,14 +178,14 @@
       display: flex;
       flex-wrap: wrap;
       //margin-bottom: $page-spacing/2;
-      margin-top: $page-spacing/4;
+      margin-top: math.div($page-spacing, 4);
       transition: 0.2s;
     }
   }
 
   &__skillcontainer {
     display: inline;
-    margin-right: $page-spacing/5;
+    margin-right: math.div($page-spacing, 5);
     max-width: 300px;
   }
 
@@ -194,7 +194,7 @@
     text-transform: uppercase;
     // padding-top: $page-spacing/4;
     transition: 0.2s;
-    margin-left: $page-spacing/4;
+    margin-left: math.div($page-spacing, 4);
     // padding-bottom: $page-spacing/4;
   }
 
@@ -202,11 +202,11 @@
     display: block;
     font-style: normal;
 
-    padding: $page-spacing/4;
+    padding: math.div($page-spacing, 4);
     //padding-left: $page-spacing/3;
     //padding-right: 0;
-    margin-left: $page-spacing/4;
-    margin-bottom: $page-spacing/4;
+    margin-left: math.div($page-spacing, 4);
+    margin-bottom: math.div($page-spacing, 4);
     // background-color: white;
     // color: black;
     border: 1px solid white;
@@ -217,7 +217,7 @@
 
 .accordion__segment--selected {
   position: relative;
-  margin-bottom: $page-spacing/2;
+  margin-bottom: math.div($page-spacing, 2);
   transition: all 0.3s;
   // border-left: 3px solid white;
   &::before {

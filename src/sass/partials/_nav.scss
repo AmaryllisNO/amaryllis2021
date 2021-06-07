@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .nav {
   // border: 1px white solid;
   position: fixed;
@@ -19,7 +21,7 @@
     font-family: 'Amiri', serif;
     text-transform: uppercase;
     font-size: 1.4em;
-    margin-top: $page-spacing/2;
+    margin-top: math.div($page-spacing, 2);
 
     &--open {
       display: block;
@@ -27,7 +29,7 @@
     }
 
     &item {
-      margin-bottom: $page-spacing/4;
+      margin-bottom: math.div($page-spacing, 4);
       text-align: center;
     }
   }
@@ -63,7 +65,7 @@
     right: 0;
     bottom: 0;
     vertical-align: middle;
-    margin-bottom: $page-spacing/1.8;
+    margin-bottom: math.div($page-spacing, 1.8);
     margin-right: $page-spacing;
 
     &button {
@@ -152,7 +154,7 @@
     }
 
     &__logo {
-      margin-top: $page-spacing/1.5;
+      margin-top: math.div($page-spacing, 1.5);
       margin-bottom: $page-spacing * 1.5;
     }
 

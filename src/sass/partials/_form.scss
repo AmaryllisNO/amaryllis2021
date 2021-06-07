@@ -1,3 +1,5 @@
+@use "sass:math";
+
 .form {
   display: flex;
   flex-direction: column;
@@ -6,9 +8,9 @@
   max-width: 500px;
 
   &__input {
-    padding-left: $page-spacing/2;
-    padding-bottom: $page-spacing/5;
-    padding-top: $page-spacing/5;
+    padding-left: math.div($page-spacing, 2);
+    padding-bottom: math.div($page-spacing, 5);
+    padding-top: math.div($page-spacing, 5);
     margin-bottom: $page-spacing;
     border-radius: 0;
     outline: none;
