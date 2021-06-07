@@ -46,17 +46,17 @@ export const data = [
       {
         id: 1.2,
         title: 'Amaryllis Icon',
-        image: 'http://amaryllis.cc/assets/svg/work/amathirdgen.svg',
+        image: 'https://amaryllis.cc/assets/svg/work/amathirdgen.svg',
       },
       {
         id: 1.3,
         title: 'Techy Abstract',
-        image: 'http://amaryllis.cc/assets/svg/work/techy.svg',
+        image: 'https://amaryllis.cc/assets/svg/work/techy.svg',
       },
       {
         id: 1.4,
         title: 'Cycling Company Logo',
-        image: 'http://amaryllis.cc/assets/svg/work/recyclelogo.svg',
+        image: 'https://amaryllis.cc/assets/svg/work/recyclelogo.svg',
       },
     ],
   },
@@ -76,26 +76,27 @@ export const data = [
         id: 2.1,
         title: 'Full Render Commmission',
         thumbnail:
-          'http://amaryllis.cc/assets/img/art/thumbnails/djpoyoshi-commission.jpg',
+          'https://amaryllis.cc/assets/img/art/thumbnails/djpoyoshi-commission.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
       {
         id: 2.2,
         title: 'Vertical Cityscape',
         thumbnail:
-          'http://amaryllis.cc/assets/img/art/thumbnails/landscape-sketch-91-rendered.jpg',
+          'https://amaryllis.cc/assets/img/art/thumbnails/landscape-sketch-91-rendered.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
       {
         id: 2.3,
         title: 'Open Landscape',
-        thumbnail: 'http://amaryllis.cc/assets/img/art/thumbnails/art.jpg',
+        thumbnail: 'https://amaryllis.cc/assets/img/art/thumbnails/art.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
       {
         id: 2.4,
         title: 'Winter Motif',
-        thumbnail: 'http://amaryllis.cc/assets/img/art/thumbnails/december.jpg',
+        thumbnail:
+          'https://amaryllis.cc/assets/img/art/thumbnails/december.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
     ],
