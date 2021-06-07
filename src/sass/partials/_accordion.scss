@@ -104,12 +104,18 @@
     padding-left: $page-spacing;
     position: relative;
     display: grid;
+    column-gap: 10px;
     grid-template-columns: 13px minmax(auto, 100%);
     grid-template-rows: auto;
+    column-gap: 0px;
     row-gap: 15px;
     min-height: 150px;
     margin-bottom: $page-spacing;
     // border: 2px solid white;
+
+    &label {
+      margin-right: -1px;
+    }
 
     &title {
       font-family: 'Lato', sans-serif;
@@ -118,6 +124,9 @@
       text-orientation: sideways;
       font-size: 0.7em;
       padding-top: 3px;
+      position: relative;
+      // top: 0.1px;
+      left: 0.5px;
 
       display: block;
       text-align: right;
