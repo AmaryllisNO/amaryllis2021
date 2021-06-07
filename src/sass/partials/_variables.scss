@@ -1,5 +1,6 @@
 $background-colour: #0f1116;
 $page-spacing: 2rem;
+
 @mixin guidline {
   transition: all 0.3s;
   content: '';
@@ -9,6 +10,8 @@ $page-spacing: 2rem;
   width: 3px;
   background-color: white;
 }
+
+// animations
 
 @keyframes fade-in {
   0% {
@@ -28,5 +31,15 @@ $page-spacing: 2rem;
   }
   100% {
     opacity: 1;
+  }
+}
+
+@keyframes content-fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+    max-height: 500px;
   }
 }
