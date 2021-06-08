@@ -10,6 +10,17 @@ export const data = [
         image:
           'https://cdn.discordapp.com/attachments/798636076662390805/849380626485870612/unknown.png',
         link: 'https://commissions.amaryllis.cc',
+        github_link: 'https://github.com/AmaryllisNO/semester-project-2',
+        popup: {
+          popup_description: `This website was part of my last semester project of 2020 as part of my studies at Noroff. It stands as an example of an e-commerce website where a user can commission an artist through their platform, complete with it's own cart system. All of the products are maintained via a headless CMS (Strapi). The admin can do CRUD operations on any of the products.`,
+          tech_stack: [
+            'HTML',
+            'SASS/SCSS',
+            'JavaScript',
+            'Strapi API',
+            'Heroku',
+          ],
+        },
       },
       {
         id: 0.1,
