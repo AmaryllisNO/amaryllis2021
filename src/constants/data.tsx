@@ -99,6 +99,13 @@ export const data = [
           'https://amaryllis.cc/assets/img/art/thumbnails/december.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
+      {
+        id: 2.5,
+        title: 'Full Render Commission',
+        thumbnail:
+          'http://amaryllis.cc/assets/img/art/thumbnails/azohcommission.png.jpg',
+        image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
+      },
     ],
   },
   {

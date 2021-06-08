@@ -139,12 +139,13 @@
 
     &__listitem {
       text-align: left;
-
+      transition: 0.3s;
       & a {
         &:focus {
-          border-left: 2px white solid;
-          padding-left: 10px;
-          outline: 1px;
+          transition: 0.1s;
+          /*  border-left: 2px white solid;
+          padding-left: 10px; */
+          outline: 2px dotted rgba(105, 105, 105, 0.479);
         }
       }
     }

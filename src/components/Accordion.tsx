@@ -92,7 +92,7 @@ const Accordion: FC<Props> = (props) => {
 
                         <div className='accordion__link'>
                           <img
-                            className='accordion__workimage accordion__workimage--uncrop'
+                            className='accordion__workimage accordion__workimage--uncrop accordion__workimage--spaced'
                             src={work.image}
                             alt={work.title}
                           />
