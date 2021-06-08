@@ -1,7 +1,5 @@
-function App() {
-  return <div className='Portal'></div>;
+function Portal() {
+  return <div id='portal'></div>;
 }
 
-export default App;
-
-export {};
+export default Portal;

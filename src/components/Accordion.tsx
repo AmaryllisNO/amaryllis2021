@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import Modal from './Modal';
 
 interface Props {
   data: object[];
@@ -8,6 +9,7 @@ const Accordion: FC<Props> = (props) => {
   const { data } = props;
   const workData = data;
   const [selected, setSelected] = useState(null);
+  const [open, setOpen] = useState(false);
 
   const toggle = (i: any) => {
     if (selected === i) {
@@ -52,15 +54,16 @@ const Accordion: FC<Props> = (props) => {
                     (work: {
                       id: number;
                       image: string;
-                      link: string;
+                      link?: string;
                       title: string;
                     }) => (
-                      <a
+                      <div
                         key={work.id}
-                        href={work.link}
                         className='accordion__work'
-                        target='_blank'
-                        rel='noopener noreferrer'
+                        onClick={() => {
+                          setOpen(true);
+                        }}
+                        style={{ cursor: 'pointer' }}
                       >
                         <div className='accordion__worklabel'>
                           <h4 className='accordion__worktitle'>{work.title}</h4>
@@ -73,7 +76,11 @@ const Accordion: FC<Props> = (props) => {
                             alt={work.title}
                           />
                         </div>
-                      </a>
+
+                        <Modal open={open} close={() => setOpen(false)}>
+                          Fancy Modal
+                        </Modal>
+                      </div>
                     )
                   )}
                 </>
