@@ -103,7 +103,7 @@ export const data = [
         id: 2.5,
         title: 'Full Render Commission',
         thumbnail:
-          'http://amaryllis.cc/assets/img/art/thumbnails/azohcommission.png.jpg',
+          'https://amaryllis.cc/assets/img/art/thumbnails/azohcommission.png.jpg',
         image: 'https://amaryllis.cc/assets/img/art/glasse-commission.png',
       },
     ],
