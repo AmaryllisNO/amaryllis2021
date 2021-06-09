@@ -22,7 +22,7 @@ const Home = () => {
       sessionStorage.setItem('visited', JSON.stringify(true));
     }, 2350);
     return () => clearTimeout(timer);
-  }, []);
+  }, [visited]);
 
   return (
     <>
