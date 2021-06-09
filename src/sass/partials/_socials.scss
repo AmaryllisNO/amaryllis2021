@@ -1,13 +1,15 @@
 @use "sass:math";
 
 .socials {
-  animation: fade-in-slowest 2.5s ease;
-
   position: fixed;
   bottom: math.div($page-spacing, 3);
   display: flex;
   justify-content: center;
   display: none;
+
+  &--fade {
+    animation: fade-in-slowest 2.5s ease;
+  }
 
   &__list {
     &--open {

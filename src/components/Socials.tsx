@@ -6,18 +6,33 @@ import {
   FaSpotify,
   FaSoundcloud,
 } from 'react-icons/fa';
+import { useLocation } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 const Socials = (props: any) => {
+  const location = useLocation();
+  const [listClass, setListClass] = useState('socials socials__list');
+
   const { open } = props;
-  console.log(open);
+  const visited = sessionStorage.getItem('visited');
+
+  useEffect(() => {
+    if (open) {
+      setListClass('socials socials__list socials__list--open');
+    } else if (location.pathname === '/' && !visited) {
+      setListClass('socials socials--fade socials__list');
+      console.log('were on the homepage');
+    } else if (location.pathname !== '/') {
+      setListClass('socials socials__list');
+    } else if (!open) {
+      setListClass('socials socials__list');
+    } else if (!open && location.pathname === '/') {
+      setListClass('socials socials--fade socials__list');
+    }
+  }, [open, location.pathname]);
+
   return (
-    <ul
-      className={
-        !open
-          ? 'socials socials__list'
-          : 'socials socials__list socials__list--open'
-      }
-    >
+    <ul className={listClass}>
       <li className='socials__listitem'>
         <a
           href='https://twitter.com/amaryllis_no'

@@ -9,9 +9,17 @@ import Nav from '../components/Nav';
 const Home = () => {
   const [finished, setFinished] = useState(false);
 
+  const visited = sessionStorage.getItem('visited');
+
   useEffect(() => {
+    if (visited) {
+      setFinished(true);
+    }
+
     const timer = setTimeout(() => {
       setFinished(true);
+
+      sessionStorage.setItem('visited', JSON.stringify(true));
     }, 2350);
     return () => clearTimeout(timer);
   }, []);
