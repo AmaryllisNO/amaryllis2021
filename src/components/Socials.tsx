@@ -29,7 +29,7 @@ const Socials = (props: any) => {
     } else if (!open && location.pathname === '/') {
       setListClass('socials socials--fade socials__list');
     }
-  }, [open, location.pathname]);
+  }, [open, location.pathname, visited]);
 
   return (
     <ul className={listClass}>
