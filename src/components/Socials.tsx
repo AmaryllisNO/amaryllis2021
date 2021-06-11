@@ -81,7 +81,7 @@ const Socials = (props: any) => {
           rel='noopener noreferrer'
           className='socials__link'
         >
-          <FaInstagram />
+          <FaLinkedin />
         </a>
       </li>
       <li className='socials__listitem'>
