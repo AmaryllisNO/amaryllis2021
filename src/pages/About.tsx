@@ -6,6 +6,7 @@ import Nav from '../components/Nav';
 import CVData from '../constants/cvdata';
 
 const About = () => {
+  document.title = 'AMARYLLIS | ABOUT';
   return (
     <>
       <div className='wrapper'>

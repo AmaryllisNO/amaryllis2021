@@ -52,12 +52,15 @@ const AltAccordion: React.FunctionComponent<Props> = (props: Props) => {
           >
             <ul className='accordion__experiencelist'>
               <li className='accordion__experiencelistitem'>
-                {item.experience[0].degree}
+                <div className='accordion__experiencelistitem--degree'>{item.experience[0].degree}</div> 
+                <span className='accordion__experiencelistitem--school'>{item.experience[0].school}</span><span className='accordion__experiencelistitem--years'>({item.experience[0].years[0]} - {item.experience[0].years[1]})</span>
               </li>
 
               <li className='accordion__experiencelistitem'>
                 {item.experience[1]}
               </li>
+              
+              
             </ul>
             <p className='accordion__description'>{item.description}</p>
             <ul className='accordion__skilllist'>

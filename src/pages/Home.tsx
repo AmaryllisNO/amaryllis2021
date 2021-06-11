@@ -8,8 +8,9 @@ import Nav from '../components/Nav';
 
 const Home = () => {
   const [finished, setFinished] = useState(false);
-
   const visited = sessionStorage.getItem('visited');
+
+  document.title = 'AMARYLLIS';
 
   useEffect(() => {
     if (visited) {

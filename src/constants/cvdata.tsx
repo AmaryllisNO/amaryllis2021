@@ -9,10 +9,11 @@ const CVData = [
         years: [2019, 2021],
       },
       '2 years of coding experience',
+      '1 freelance project',
     ],
-    description: ` I began studying front-end development at Noroff Vocational School in Bergen in 2019, where I've gained knowledge and experience with HTML, CSS and JavaScript, as well as general knowledge around certain content management systems and wordpress.
+    description: ` I began studying front-end development at Noroff Vocational School in Bergen in 2019, where I've gained knowledge and experience with HTML, CSS and JavaScript/TypeScript, as well JavaScript frameworks such as React and Next.js. 
 
-    My time studying web development has been exciting, in that it has opened up another medium for creativity. `,
+    My time studying web development has been exciting, in that it has opened up another medium for creativity.`,
     skill_name: 'Languages:',
     skills: [
       'HTML',

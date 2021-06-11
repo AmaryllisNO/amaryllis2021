@@ -1,8 +1,10 @@
 .wrapper {
   margin: $page-spacing;
+  margin-bottom: $page-spacing*2;
   min-height: 90vh;
   position: relative;
   z-index: 1;
+
   &--inner {
     position: relative;
     z-index: 10;
