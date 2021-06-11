@@ -5,6 +5,7 @@ import {
   FaTwitch,
   FaSpotify,
   FaSoundcloud,
+  FaLinkedin,
 } from 'react-icons/fa';
 import { useLocation } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -66,6 +67,16 @@ const Socials = (props: any) => {
       <li className='socials__listitem'>
         <a
           href='https://www.instagram.com/amaryllis_no/'
+          target='_blank'
+          rel='noopener noreferrer'
+          className='socials__link'
+        >
+          <FaInstagram />
+        </a>
+      </li>
+      <li className='socials__listitem'>
+        <a
+          href='https://www.linkedin.com/in/alexis-hope-b8727b203/'
           target='_blank'
           rel='noopener noreferrer'
           className='socials__link'
