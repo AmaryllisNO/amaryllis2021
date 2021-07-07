@@ -90,7 +90,7 @@ const CVData = [
         school: 'Noroff - School of Technology and Digital Media',
         years: [2017, 2019],
       },
-      '3 years of graphic design and freelance experience ',
+      'Been producing music since 2012',
     ],
     description: ` "Amaryllis has been producing drum & bass since 2012, with her first EP, ‘Never Again’, released on Surreal Recordings; now, her latest EP ‘Light Pillars’ marks her Subsphere Records debut. Drawing influence from Netsky, Fred V & Grafix, Camo & Krooked, Culture Shock, Logistics, and more, Amaryllis’ bright and energetic sound is a welcome addition to the Subsphere family.
 
