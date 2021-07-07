@@ -1,12 +1,21 @@
 .Portal {
   position: fixed;
+  color: white;
   top: 50%;
-  left: 50;
+  left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgb(155, 155, 155);
   z-index: 1000;
 
+  &__button {
+    position: relative;
+    z-index: 1001;
+    color: white;
+  }
+
   &--overlay {
+    min-width: 100vw;
+    min-height: 100vh;
     position: fixed;
     top: 0;
     left: 0;
