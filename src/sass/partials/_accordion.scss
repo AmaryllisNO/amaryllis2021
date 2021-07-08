@@ -129,9 +129,10 @@
       text-transform: uppercase;
       text-orientation: sideways;
       font-size: 0.7em;
-      padding-top: 3px;
+      padding-top: 10px;
+      padding-bottom: 2px;
       position: relative;
-      // top: 0.1px;
+
       left: 0.5px;
 
       display: block;
@@ -189,7 +190,7 @@
       }
 
       &--school {
-        margin-right:0.5em;
+        margin-right: 0.5em;
       }
 
       &--years {
@@ -290,6 +291,7 @@
   .accordion__worktitle {
     position: relative;
     background-color: white;
+    top: 0;
     color: black;
     transition: 0.3s;
   }
@@ -297,7 +299,6 @@
 
 @media only screen and (max-width: 900px) {
   .accordion {
-
     &--selected {
       top: -5px;
     }

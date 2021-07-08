@@ -1,4 +1,5 @@
 import { FC, useState } from 'react';
+import Modal from './Modal';
 
 interface Props {
   data: object[];
@@ -8,6 +9,8 @@ const Accordion: FC<Props> = (props) => {
   const { data } = props;
   const workData = data;
   const [selected, setSelected] = useState(null);
+  const [isOpen, setIsOpen] = useState(false);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   const toggle = (i: any) => {
     if (selected === i) {
@@ -15,6 +18,12 @@ const Accordion: FC<Props> = (props) => {
     }
 
     return setSelected(i);
+  };
+
+  const openImage = (selectedImage: any) => {
+    setIsOpen(true);
+    setSelectedImage(selectedImage);
+    console.log(selectedImage);
   };
 
   return (
@@ -120,13 +129,27 @@ const Accordion: FC<Props> = (props) => {
                           <h4 className='accordion__worktitle'>{work.title}</h4>
                         </div>
 
-                        <div className='accordion__link'>
+                        <button
+                          onClick={() => {
+                            openImage(work.image);
+                          }}
+                        >
+                          <div className='accordion__link'>
+                            <img
+                              className='accordion__workimage accordion__workimage--center'
+                              src={work.thumbnail}
+                              alt={work.title}
+                            />
+                          </div>
+                        </button>
+                        <Modal open={isOpen}>
                           <img
-                            className='accordion__workimage accordion__workimage--center'
-                            src={work.thumbnail}
+                            src={work.image}
                             alt={work.title}
+                            className='testportal'
                           />
-                        </div>
+                          Fancy Modal
+                        </Modal>
                       </div>
                     )
                   )}
