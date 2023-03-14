@@ -1,4 +1,4 @@
-.Portal {
+/* .Portal {
   position: fixed;
   top: 50%;
   left: 50;
@@ -14,5 +14,58 @@
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.692);
     z-index: 1000;
+  }
+}
+ */
+
+.portal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  // margin-top: -33px;
+  z-index: 9999;
+
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  // outline: 20px solid red;
+
+  &::after {
+    content: "";
+    // margin-top: -33px;
+    position: fixed;
+    left: -100;
+    top: -100;
+    background-color: rgba(0, 0, 0, 0.616);
+    width: 100vw;
+    height: 100vh;
+  }
+
+  &__imagecontainer {
+    z-index: 10;
+    padding: 10px;
+    max-height: 900px;
+    // outline: 20px solid red;
+    display: flex;
+    justify-content: center;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    // align-self: center;
+    // overflow: hidden;
+
+    // note xxx: UI moves when portal is opened, fix it
+  }
+
+  &__image {
+    // border: 1px solid red;
+    width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    overflow: hidden;
   }
 }
