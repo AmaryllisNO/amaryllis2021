@@ -1,9 +1,10 @@
 $background-colour: #0f1116;
 $page-spacing: 2rem;
+$nav-width: 224px;
 
 @mixin guidline {
   transition: all 0.3s;
-  content: '';
+  content: "";
   position: absolute;
   display: inline-block;
   height: 1.5rem;

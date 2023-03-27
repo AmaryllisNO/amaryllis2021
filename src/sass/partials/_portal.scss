@@ -19,15 +19,18 @@
  */
 
 .portal {
+  // margin-left: $nav-width/2;
   position: fixed;
   top: 0;
   left: 0;
   // margin-top: -33px;
   z-index: 9999;
 
+  // max-width: calc(100% - $page-spacing);
   width: 100%;
   min-height: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   // outline: 20px solid red;

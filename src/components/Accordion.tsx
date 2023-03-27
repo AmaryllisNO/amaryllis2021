@@ -20,7 +20,7 @@ const Accordion: FC<Props> = (props) => {
     return setSelected(i);
   };
 
-  console.log("work data", workData[2].works[0].image);
+  console.log("work data - art", workData[2].works.length);
 
   const openImage = (selectedImageId: any) => {
     setIsOpen(true);
@@ -164,6 +164,27 @@ const Accordion: FC<Props> = (props) => {
           </div>
         ))}
       </div>
+      {isOpen && (
+        <div className="accordion__buttongroup">
+          {selectedImageId > 0 && (
+            <button
+              className="accordion__button"
+              onClick={() => setSelectedImageId(selectedImageId - 1)}
+            >
+              &lt;
+            </button>
+          )}
+
+          {selectedImageId !== workData[2].works.length - 1 && (
+            <button
+              className="accordion__button"
+              onClick={() => setSelectedImageId(selectedImageId + 1)}
+            >
+              &gt;
+            </button>
+          )}
+        </div>
+      )}
       <Modal open={isOpen}>
         <div
           className="portal"
