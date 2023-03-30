@@ -79,20 +79,25 @@ export const data = [
       {
         id: 0,
         title: "Skybreak - Moonglow Cover Art",
-        thumbnail: "https://i.ibb.co/m5jMPsP/skybreak-moonglow.png",
-        image: "https://i.ibb.co/m5jMPsP/skybreak-moonglow.png",
+        thumbnail:
+          "https://amaryllis.cc/assets/img/art/portfolio/skybreak_moonglow.png",
+        image:
+          "https://amaryllis.cc/assets/img/art/portfolio/skybreak_moonglow.png",
       },
       {
         id: 1,
         title: "Boxplot - Here & Now",
-        thumbnail: "https://i.ibb.co/88G8Bjm/Boxplot-Commission-FINAL.jpg",
-        image: "https://i.ibb.co/88G8Bjm/Boxplot-Commission-FINAL.jpg",
+        thumbnail:
+          "https://amaryllis.cc/assets/img/art/portfolio/Boxplot%20Commission%20FINAL.jpg",
+        image:
+          "https://amaryllis.cc/assets/img/art/portfolio/Boxplot%20Commission%20FINAL.jpg",
       },
       {
         id: 2,
         title: "glasse - The Keeper of Death",
-        thumbnail: "https://i.ibb.co/dBYWH0T/Glasse-2.jpg",
-        image: "https://i.ibb.co/dBYWH0T/Glasse-2.jpg",
+        thumbnail:
+          "https://amaryllis.cc/assets/img/art/portfolio/Glasse%202.jpg",
+        image: "https://amaryllis.cc/assets/img/art/portfolio/Glasse%202.jpg",
       },
       {
         id: 3,
@@ -100,45 +105,44 @@ export const data = [
         thumbnail:
           "https://amaryllis.cc/assets/img/art/thumbnails/djpoyoshi-commission.jpg",
         image:
-          "https://amaryllis.cc/assets/img/art/thumbnails/djpoyoshi-commission.jpg",
+          "https://amaryllis.cc/assets/img/art/portfolio/DJPoyoshi%20Commission.png",
       },
       {
         id: 4,
         title: "Null∅ - VIE",
-        thumbnail: "https://i.ibb.co/Dg24ZrN/a3697971105-10.jpg",
-        image: "https://i.ibb.co/Dg24ZrN/a3697971105-10.jpg",
+        thumbnail:
+          "https://amaryllis.cc/assets/img/art/portfolio/vieeeeeee.png",
+        image: "https://amaryllis.cc/assets/img/art/portfolio/vieeeeeee.png",
       },
       {
         id: 5,
         title: "Looking Up - Personal Piece",
-        thumbnail:
-          "https://i.ibb.co/SyvZpXx/looking-up-by-amaryllisno-df7vz0j-fullview.jpg",
-        image:
-          "https://i.ibb.co/SyvZpXx/looking-up-by-amaryllisno-df7vz0j-fullview.jpg",
+        thumbnail: "https://amaryllis.cc/assets/img/art/portfolio/academy.png",
+        image: "https://amaryllis.cc/assets/img/art/portfolio/academy.png",
       },
       {
         id: 6,
         title: "Blaidd - Elden Ring Fanart",
         thumbnail:
-          "https://i.ibb.co/3RZL2My/blaidd-the-half-wolf-by-amaryllisno-df260uv-fullview.jpg",
+          "https://amaryllis.cc/assets/img/art/portfolio/blaidd_the_half_wolf_by_amaryllisno_df260uv-fullview.jpg",
         image:
-          "https://i.ibb.co/3RZL2My/blaidd-the-half-wolf-by-amaryllisno-df260uv-fullview.jpg",
+          "https://amaryllis.cc/assets/img/art/portfolio/blaidd_the_half_wolf_by_amaryllisno_df260uv-fullview.jpg",
       },
       {
         id: 7,
         title: "Landscape Sketch",
         thumbnail:
-          "https://i.ibb.co/pry9DhZ/drawring-by-amaryllisno-dfqdayv-fullview.png",
+          "https://amaryllis.cc/assets/img/art/portfolio/drawring_by_amaryllisno_dfqdayv-fullview.png",
         image:
-          "https://i.ibb.co/pry9DhZ/drawring-by-amaryllisno-dfqdayv-fullview.png",
+          "https://amaryllis.cc/assets/img/art/portfolio/drawring_by_amaryllisno_dfqdayv-fullview.png",
       },
       {
         id: 8,
         title: "Amaryllis - Light Pillars II",
         thumbnail:
-          "https://i.ibb.co/B6z1bSw/light-pillars-ii-by-amaryllisno-df9okuh-pre.jpg",
+          "https://amaryllis.cc/assets/img/art/portfolio/light_pillars_ii_by_amaryllisno_df9okuh-pre.jpg",
         image:
-          "https://i.ibb.co/B6z1bSw/light-pillars-ii-by-amaryllisno-df9okuh-pre.jpg",
+          "https://amaryllis.cc/assets/img/art/portfolio/light_pillars_ii_by_amaryllisno_df9okuh-pre.jpg",
       },
     ],
   },
